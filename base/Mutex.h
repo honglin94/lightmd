@@ -1,5 +1,5 @@
 #ifndef LMD_MUTEX_H
-#define LMD_MUTEX_H`
+#define LMD_MUTEX_H
 
 #include "base/noncopyable.h"
 #include "pthread.h"
@@ -19,7 +19,7 @@ public:
         pthread_mutex_destroy(&pthreadMutex_);
     }
 
-    pthread_mutex_t getPthreadMutex()
+    pthread_mutex_t& getPthreadMutex()
     {
         return pthreadMutex_;
     }

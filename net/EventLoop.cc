@@ -18,6 +18,20 @@ EventLoop::EventLoop()
     pEventfdChannel_ = pChannel;
 }
 
+void EventLoop::loop()
+{
+    while(!quit_)
+    {
+        std::vector<Channel*> Channels;
+        pPoller_->poll(&Channels);
+        for(int i = 0; i < Channels.size(); ++i)
+        {
+            Channels[i]->handleEvent();
+        }
+        doPendingFunctors();
+    }
+}
+
 int EventLoop::createEventfd()
 {
     int efd = ::eventfd(0, EFD_CLOEXEC | EFD_NONBLOCK);
@@ -36,6 +50,11 @@ void EventLoop::handleRead()
     {
         std::cout << "EventLoop::handleRead() failed";
     }
+}
+
+void EventLoop::handleWrite()
+{
+
 }
 
 void EventLoop::wakeup()

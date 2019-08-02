@@ -14,7 +14,8 @@ class ThreadPool: Run
 public:
     void start(int threadNums);
     void addTask(const Task& task);
-    virtual void run0();
+    void doTask();
+    virtual void run(const std::string& name, void* param);
 
 private:
     std::vector<Thread*> pThreads_;

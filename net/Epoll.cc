@@ -1,6 +1,5 @@
 #include "net/Epoll.h"
 #include "net/Channel.h"
-#include "net/Config.h"
 
 #include <errno.h>
 #include <iostream>
@@ -20,10 +19,17 @@ Epoll::Epoll()
 void Epoll::poll(std::vector<Channel*>* pChannels)
 {
     //non-blocking io means fd is non-blocking instead of epollfd, epollfd must be blocked
+    std::cout << "waiting at epoll" << std::endl;
     int rfds = ::epoll_wait(epollfd_, events_, MAX_EVENTS, -1);
+    if(rfds == -1)
+    {
+        std::cout << "epoll_wait error, errno: " << errno << std::endl;
+        return ;
+    }
     for(int i = 0; i < rfds; ++i)
     {
         Channel* pChannel = static_cast<Channel*>(events_[i].data.ptr);
+        std::cout << "ok pChannel" << std::endl;
         pChannel->setRevents(events_[i].events);
         pChannels->push_back(pChannel);
     }
@@ -31,7 +37,7 @@ void Epoll::poll(std::vector<Channel*>* pChannels)
 
 void Epoll::update(Channel* pChannel)
 {
-    if(pChannel->isInLoop())
+    if(pChannel->isInPool())
     {
         struct epoll_event ev;
         ev.events = pChannel->getEvent();
@@ -46,7 +52,8 @@ void Epoll::update(Channel* pChannel)
         ev.data.ptr = pChannel;
         int fd = pChannel->getfd();
         ::epoll_ctl(epollfd_, EPOLL_CTL_ADD, fd, &ev);
-        pChannel->trapInLoop();
+        pChannel->trapInPool();
     }
 }
+
     

@@ -1,6 +1,8 @@
 #ifndef LMD_EPOLL_H
 #define LMD_EPOLL_H
 
+#include "net/Config.h"
+
 #include <sys/epoll.h>
 #include <vector>
 
@@ -17,7 +19,7 @@ public:
 
 private:
     int epollfd_;
-    struct epoll_event* events_;
+    struct epoll_event events_[MAX_EVENTS];
 };
 }
 

@@ -1,7 +1,7 @@
 #ifndef LMD_EVENTLOOP_H
 #define LMD_EVENTLOOP_H
 
-#include "net/ChannelCallback.h"
+#include "net/Callback.h"
 #include "base/noncopyable.h"
 #include "base/Task.h"
 #include "base/Mutex.h"
@@ -24,6 +24,7 @@ public:
     bool isInLoop();
 
     virtual void handleRead();
+    virtual void handleWrite();
 
 private:
     Epoll* pPoller_;

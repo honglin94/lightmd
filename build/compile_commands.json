@@ -1,0 +1,82 @@
+[
+{
+  "directory": "/home/liam/workspace/lightmd/build/base",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_base.dir/Thread.cc.o -c /home/liam/workspace/lightmd/base/Thread.cc",
+  "file": "/home/liam/workspace/lightmd/base/Thread.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/base",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_base.dir/Task.cc.o -c /home/liam/workspace/lightmd/base/Task.cc",
+  "file": "/home/liam/workspace/lightmd/base/Task.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/base",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_base.dir/ThreadPool.cc.o -c /home/liam/workspace/lightmd/base/ThreadPool.cc",
+  "file": "/home/liam/workspace/lightmd/base/ThreadPool.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/net",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_net.dir/Timestamp.cc.o -c /home/liam/workspace/lightmd/net/Timestamp.cc",
+  "file": "/home/liam/workspace/lightmd/net/Timestamp.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/net",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_net.dir/TimerQueue.cc.o -c /home/liam/workspace/lightmd/net/TimerQueue.cc",
+  "file": "/home/liam/workspace/lightmd/net/TimerQueue.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/net",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_net.dir/Acceptor.cc.o -c /home/liam/workspace/lightmd/net/Acceptor.cc",
+  "file": "/home/liam/workspace/lightmd/net/Acceptor.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/net",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_net.dir/Channel.cc.o -c /home/liam/workspace/lightmd/net/Channel.cc",
+  "file": "/home/liam/workspace/lightmd/net/Channel.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/net",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_net.dir/Tcpserver.cc.o -c /home/liam/workspace/lightmd/net/Tcpserver.cc",
+  "file": "/home/liam/workspace/lightmd/net/Tcpserver.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/net",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_net.dir/EventLoop.cc.o -c /home/liam/workspace/lightmd/net/EventLoop.cc",
+  "file": "/home/liam/workspace/lightmd/net/EventLoop.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/net",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_net.dir/Connection.cc.o -c /home/liam/workspace/lightmd/net/Connection.cc",
+  "file": "/home/liam/workspace/lightmd/net/Connection.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/net",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_net.dir/Epoll.cc.o -c /home/liam/workspace/lightmd/net/Epoll.cc",
+  "file": "/home/liam/workspace/lightmd/net/Epoll.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/http",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_http.dir/HttpServer.cc.o -c /home/liam/workspace/lightmd/http/HttpServer.cc",
+  "file": "/home/liam/workspace/lightmd/http/HttpServer.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/http",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_http.dir/HttpRequest.cc.o -c /home/liam/workspace/lightmd/http/HttpRequest.cc",
+  "file": "/home/liam/workspace/lightmd/http/HttpRequest.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/http",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_http.dir/HttpResponse.cc.o -c /home/liam/workspace/lightmd/http/HttpResponse.cc",
+  "file": "/home/liam/workspace/lightmd/http/HttpResponse.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/http",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/lightmd_http.dir/HttpContext.cc.o -c /home/liam/workspace/lightmd/http/HttpContext.cc",
+  "file": "/home/liam/workspace/lightmd/http/HttpContext.cc"
+},
+{
+  "directory": "/home/liam/workspace/lightmd/build/example",
+  "command": "/usr/bin/g++-5    -I/home/liam/workspace/lightmd  -g   -std=gnu++11 -o CMakeFiles/httpserver_test.dir/httpserver_test.cc.o -c /home/liam/workspace/lightmd/example/httpserver_test.cc",
+  "file": "/home/liam/workspace/lightmd/example/httpserver_test.cc"
+}
+]

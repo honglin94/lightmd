@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblightmd.a  CMakeFiles/lightmd.dir/lightmd.cpp.o
+/usr/bin/ranlib liblightmd.a

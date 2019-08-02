@@ -1,7 +1,7 @@
 #ifndef LMD_CHANNEL_H
 #define LMD_CHANNEL_H
 
-#include "net/ChannelCallback.h"
+#include "net/Callback.h"
 
 namespace lightmd
 {
@@ -16,8 +16,12 @@ public:
     void setRevents(int revents);
     void enableWriting();
     void enableReading();
-    bool isInLoop();
-    void trapInLoop();
+    void disableWriting();
+    void disableReading();
+    bool isReadable();
+    bool isWritable();
+    bool isInPool();
+    void trapInPool();
     int getfd();
     int getEvent();
     void update();
@@ -28,7 +32,7 @@ private:
     int fd_;
     int event_;
     int revent_;
-    bool isInLoop_;
+    bool isInPool_;
 };
 }
 

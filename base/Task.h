@@ -8,11 +8,13 @@ namespace lightmd
 class Task 
 {
 public:
-    Task(Run* pRun0);
+    Task(Run* pRun, const std::string& name, void* param);
     void dotask();
 
 private:
-    Run* pRun0_; //Run is an abstract base, should be referenced by pointer
+    Run* pRun_; //Run is an abstract base, should be referenced by pointer
+    std::string name_;
+    void* param_;
 };
 
 }

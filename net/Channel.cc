@@ -7,7 +7,7 @@
 using namespace lightmd;
 
 Channel::Channel(EventLoop* pEventloop, int fd)
-    : pEventLoop_(pEventloop), fd_(fd), event_(0), revent_(0), isInLoop_(false), pCallback_(NULL)  
+    : pEventLoop_(pEventloop), fd_(fd), event_(0), revent_(0), isInPool_(false), pCallback_(NULL)  
     { }
 
 void Channel::handleEvent()
@@ -30,21 +30,46 @@ void Channel::setCallback(ChannelCallback* pCallback)
 void Channel::enableReading()
 {
     event_ |= EPOLLIN;
+    update();
 }
 
 void Channel::enableWriting()
 {
     event_ |= EPOLLOUT;
+    update();
 }
+
+void Channel::disableReading()
+{
+    event_ &= ~EPOLLIN;
+    update();
+}
+
+void Channel::disableWriting()
+{
+    event_ &= ~EPOLLOUT;
+    update();
+}
+
+bool Channel::isReadable()
+{
+    return event_ & EPOLLIN;
+}
+
+bool Channel::isWritable()
+{
+    return event_ & EPOLLOUT;
+}
+
 
 void Channel::setRevents(int revents)
 {
     revent_ = revents;
 }
 
-void Channel::trapInLoop()
+void Channel::trapInPool()
 {
-    isInLoop_ = true;
+    isInPool_ = true;
 }
 
 void Channel::update()
@@ -62,9 +87,9 @@ int Channel::getEvent()
     return event_;
 }
 
-bool Channel::isInLoop()
+bool Channel::isInPool()
 {
-    return isInLoop_;
+    return isInPool_;
 }
 
 

@@ -2,11 +2,11 @@
 
 using namespace lightmd;
 
-Task::Task(Run* pRun0)
-    : pRun0_(pRun0_)
+Task::Task(Run* pRun, const std::string& name, void* param)
+    : pRun_(pRun), name_(name), param_(param)
     { }
 
 void Task::dotask()
 {
-    pRun0_->run0();
+    pRun_->run(name_, param_);
 }

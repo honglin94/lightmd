@@ -15,6 +15,11 @@ Timestamp::Timestamp(int64_t microsecondsSinceEpoch)
     : microsecondsSinceEpoch_(microsecondsSinceEpoch)
     { }
 
+bool Timestamp::valid()
+{
+    return microsecondsSinceEpoch_ > 0;
+}
+
 std::string Timestamp::toString()
 {
     char buf[32];
@@ -32,10 +37,8 @@ Timestamp Timestamp::now()
     return Timestamp(seconds * kMicrosecondsPerSeconds + tv.tv_usec);
 }
 
-Timestamp Timestamp::nowAfterSeconds(double seconds)
+void Timestamp::swap(Timestamp& that)
 {
-    int64_t microseconds = seconds * kMicrosecondsPerSeconds;
-    return Timestamp(now().getMicrosecondsSinceEpoch + microseconds);
+    std::swap(microsecondsSinceEpoch_, that.microsecondsSinceEpoch_);
 }
-
 

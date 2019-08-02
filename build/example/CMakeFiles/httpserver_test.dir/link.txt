@@ -1,0 +1,1 @@
+/usr/bin/g++-5   -g   CMakeFiles/httpserver_test.dir/httpserver_test.cc.o  -o httpserver_test -rdynamic ../http/liblightmd_http.a ../net/liblightmd_net.a ../base/liblightmd_base.a -lpthread -lrt 
