@@ -29,7 +29,6 @@ void HttpServer::onMessage(Connection* pConn, string& buf)
     }
     if(context_.isGotAll())
     {
-        std::cout << "parseRequest finished" << std::endl;
         doResponse(pConn, context_.getRequest());
         context_.reset();
     }
@@ -48,7 +47,6 @@ void HttpServer::doResponse(Connection* pConn, const HttpRequest& request)
     HttpResponse response(closed);
     //fill response
     callback_(request, response);
-    std::cout << "response msg generated" << std::endl;
     string data;
     response.appendToBuffer(data);
     pConn->send(data);

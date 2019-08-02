@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lightmd_base.dir/Thread.cc.o"
-  "CMakeFiles/lightmd_base.dir/Task.cc.o"
   "CMakeFiles/lightmd_base.dir/ThreadPool.cc.o"
+  "CMakeFiles/lightmd_base.dir/Task.cc.o"
+  "CMakeFiles/lightmd_base.dir/Thread.cc.o"
   "liblightmd_base.pdb"
   "liblightmd_base.a"
 )

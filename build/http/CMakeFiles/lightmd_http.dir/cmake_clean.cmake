@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lightmd_http.dir/HttpServer.cc.o"
   "CMakeFiles/lightmd_http.dir/HttpRequest.cc.o"
-  "CMakeFiles/lightmd_http.dir/HttpResponse.cc.o"
   "CMakeFiles/lightmd_http.dir/HttpContext.cc.o"
+  "CMakeFiles/lightmd_http.dir/HttpResponse.cc.o"
   "liblightmd_http.pdb"
   "liblightmd_http.a"
 )

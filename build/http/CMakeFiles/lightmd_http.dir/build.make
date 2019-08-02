@@ -105,33 +105,9 @@ http/CMakeFiles/lightmd_http.dir/HttpRequest.cc.o.provides: http/CMakeFiles/ligh
 http/CMakeFiles/lightmd_http.dir/HttpRequest.cc.o.provides.build: http/CMakeFiles/lightmd_http.dir/HttpRequest.cc.o
 
 
-http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o: http/CMakeFiles/lightmd_http.dir/flags.make
-http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o: ../http/HttpResponse.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liam/workspace/lightmd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o"
-	cd /home/liam/workspace/lightmd/build/http && /usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lightmd_http.dir/HttpResponse.cc.o -c /home/liam/workspace/lightmd/http/HttpResponse.cc
-
-http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lightmd_http.dir/HttpResponse.cc.i"
-	cd /home/liam/workspace/lightmd/build/http && /usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liam/workspace/lightmd/http/HttpResponse.cc > CMakeFiles/lightmd_http.dir/HttpResponse.cc.i
-
-http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lightmd_http.dir/HttpResponse.cc.s"
-	cd /home/liam/workspace/lightmd/build/http && /usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liam/workspace/lightmd/http/HttpResponse.cc -o CMakeFiles/lightmd_http.dir/HttpResponse.cc.s
-
-http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.requires:
-
-.PHONY : http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.requires
-
-http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.provides: http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.requires
-	$(MAKE) -f http/CMakeFiles/lightmd_http.dir/build.make http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.provides.build
-.PHONY : http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.provides
-
-http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.provides.build: http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o
-
-
 http/CMakeFiles/lightmd_http.dir/HttpContext.cc.o: http/CMakeFiles/lightmd_http.dir/flags.make
 http/CMakeFiles/lightmd_http.dir/HttpContext.cc.o: ../http/HttpContext.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liam/workspace/lightmd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object http/CMakeFiles/lightmd_http.dir/HttpContext.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liam/workspace/lightmd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object http/CMakeFiles/lightmd_http.dir/HttpContext.cc.o"
 	cd /home/liam/workspace/lightmd/build/http && /usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lightmd_http.dir/HttpContext.cc.o -c /home/liam/workspace/lightmd/http/HttpContext.cc
 
 http/CMakeFiles/lightmd_http.dir/HttpContext.cc.i: cmake_force
@@ -153,20 +129,44 @@ http/CMakeFiles/lightmd_http.dir/HttpContext.cc.o.provides: http/CMakeFiles/ligh
 http/CMakeFiles/lightmd_http.dir/HttpContext.cc.o.provides.build: http/CMakeFiles/lightmd_http.dir/HttpContext.cc.o
 
 
+http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o: http/CMakeFiles/lightmd_http.dir/flags.make
+http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o: ../http/HttpResponse.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liam/workspace/lightmd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o"
+	cd /home/liam/workspace/lightmd/build/http && /usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lightmd_http.dir/HttpResponse.cc.o -c /home/liam/workspace/lightmd/http/HttpResponse.cc
+
+http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lightmd_http.dir/HttpResponse.cc.i"
+	cd /home/liam/workspace/lightmd/build/http && /usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liam/workspace/lightmd/http/HttpResponse.cc > CMakeFiles/lightmd_http.dir/HttpResponse.cc.i
+
+http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lightmd_http.dir/HttpResponse.cc.s"
+	cd /home/liam/workspace/lightmd/build/http && /usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liam/workspace/lightmd/http/HttpResponse.cc -o CMakeFiles/lightmd_http.dir/HttpResponse.cc.s
+
+http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.requires:
+
+.PHONY : http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.requires
+
+http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.provides: http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.requires
+	$(MAKE) -f http/CMakeFiles/lightmd_http.dir/build.make http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.provides.build
+.PHONY : http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.provides
+
+http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.provides.build: http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o
+
+
 # Object files for target lightmd_http
 lightmd_http_OBJECTS = \
 "CMakeFiles/lightmd_http.dir/HttpServer.cc.o" \
 "CMakeFiles/lightmd_http.dir/HttpRequest.cc.o" \
-"CMakeFiles/lightmd_http.dir/HttpResponse.cc.o" \
-"CMakeFiles/lightmd_http.dir/HttpContext.cc.o"
+"CMakeFiles/lightmd_http.dir/HttpContext.cc.o" \
+"CMakeFiles/lightmd_http.dir/HttpResponse.cc.o"
 
 # External object files for target lightmd_http
 lightmd_http_EXTERNAL_OBJECTS =
 
 http/liblightmd_http.a: http/CMakeFiles/lightmd_http.dir/HttpServer.cc.o
 http/liblightmd_http.a: http/CMakeFiles/lightmd_http.dir/HttpRequest.cc.o
-http/liblightmd_http.a: http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o
 http/liblightmd_http.a: http/CMakeFiles/lightmd_http.dir/HttpContext.cc.o
+http/liblightmd_http.a: http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o
 http/liblightmd_http.a: http/CMakeFiles/lightmd_http.dir/build.make
 http/liblightmd_http.a: http/CMakeFiles/lightmd_http.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liam/workspace/lightmd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library liblightmd_http.a"
@@ -180,8 +180,8 @@ http/CMakeFiles/lightmd_http.dir/build: http/liblightmd_http.a
 
 http/CMakeFiles/lightmd_http.dir/requires: http/CMakeFiles/lightmd_http.dir/HttpServer.cc.o.requires
 http/CMakeFiles/lightmd_http.dir/requires: http/CMakeFiles/lightmd_http.dir/HttpRequest.cc.o.requires
-http/CMakeFiles/lightmd_http.dir/requires: http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.requires
 http/CMakeFiles/lightmd_http.dir/requires: http/CMakeFiles/lightmd_http.dir/HttpContext.cc.o.requires
+http/CMakeFiles/lightmd_http.dir/requires: http/CMakeFiles/lightmd_http.dir/HttpResponse.cc.o.requires
 
 .PHONY : http/CMakeFiles/lightmd_http.dir/requires
 

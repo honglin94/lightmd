@@ -1,2 +1,2 @@
-/usr/bin/ar qc liblightmd_base.a  CMakeFiles/lightmd_base.dir/Thread.cc.o CMakeFiles/lightmd_base.dir/Task.cc.o CMakeFiles/lightmd_base.dir/ThreadPool.cc.o
+/usr/bin/ar qc liblightmd_base.a  CMakeFiles/lightmd_base.dir/ThreadPool.cc.o CMakeFiles/lightmd_base.dir/Task.cc.o CMakeFiles/lightmd_base.dir/Thread.cc.o
 /usr/bin/ranlib liblightmd_base.a

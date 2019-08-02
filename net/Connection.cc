@@ -15,7 +15,7 @@ Connection::Connection(EventLoop* pEventLoop, int connfd)
 
 void Connection::send(const std::string& msg)
 {
-    Task task(this, "doTask", (void*)&msg);
+    Task task(this, "doSend", (void*)&msg);
     pEventLoop_->runInLoop(task);
 }
 
@@ -64,9 +64,7 @@ void Connection::handleWrite()
 void Connection::handleRead()
 {
     char msg[8192];
-    std::cout << sizeof(msg) << std::endl;
     int n =::read(connfd_, msg, sizeof(msg));
-    std::cout << "read bytes: " << n << std::endl;
     if(n < 0)
     {
         if(errno == ECONNRESET)

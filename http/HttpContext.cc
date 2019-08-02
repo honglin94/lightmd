@@ -33,7 +33,7 @@ bool HttpContext::parseRequestLine(const string& requestLine)
                 request_.setPath(url);
             }
             //set version
-            isSuccess = request_.setVersion(requestLine.substr(second_space + 1));  
+            isSuccess = request_.setVersion(requestLine.substr(first_space + second_space + 2));  
         }
     }
     return isSuccess;
@@ -54,12 +54,13 @@ bool HttpContext::parseRequest(string& inbuf, Timestamp receiveTime)
                 if(Continue)
                 {
                     request_.setReceiveTime(receiveTime);
-                    inbuf.erase(0, crlf + 2);
+                    state_ = kExpectHeaders;
                 }
                 else
                 {
                     hasMore = false;
                 }
+                inbuf.erase(0, crlf + 2);
             }
             else
             {

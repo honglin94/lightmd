@@ -19,7 +19,6 @@ Epoll::Epoll()
 void Epoll::poll(std::vector<Channel*>* pChannels)
 {
     //non-blocking io means fd is non-blocking instead of epollfd, epollfd must be blocked
-    std::cout << "waiting at epoll" << std::endl;
     int rfds = ::epoll_wait(epollfd_, events_, MAX_EVENTS, -1);
     if(rfds == -1)
     {
@@ -29,7 +28,6 @@ void Epoll::poll(std::vector<Channel*>* pChannels)
     for(int i = 0; i < rfds; ++i)
     {
         Channel* pChannel = static_cast<Channel*>(events_[i].data.ptr);
-        std::cout << "ok pChannel" << std::endl;
         pChannel->setRevents(events_[i].events);
         pChannels->push_back(pChannel);
     }

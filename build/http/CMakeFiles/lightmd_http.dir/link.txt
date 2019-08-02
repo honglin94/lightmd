@@ -1,2 +1,2 @@
-/usr/bin/ar qc liblightmd_http.a  CMakeFiles/lightmd_http.dir/HttpServer.cc.o CMakeFiles/lightmd_http.dir/HttpRequest.cc.o CMakeFiles/lightmd_http.dir/HttpResponse.cc.o CMakeFiles/lightmd_http.dir/HttpContext.cc.o
+/usr/bin/ar qc liblightmd_http.a  CMakeFiles/lightmd_http.dir/HttpServer.cc.o CMakeFiles/lightmd_http.dir/HttpRequest.cc.o CMakeFiles/lightmd_http.dir/HttpContext.cc.o CMakeFiles/lightmd_http.dir/HttpResponse.cc.o
 /usr/bin/ranlib liblightmd_http.a

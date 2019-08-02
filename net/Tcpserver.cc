@@ -23,7 +23,6 @@ void TcpServer::setUser(User* pUser)
 void TcpServer::newConnection(int connfd)
 {
     Connection* conn = new Connection(pEventLoop_, connfd);
-    std::cout << "connection established, connfd: " << connfd << std::endl;
     connections_[connfd] = conn;
     conn->setUser(pUser_);
     conn->onConnection();
