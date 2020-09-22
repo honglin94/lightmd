@@ -1,2 +1,0 @@
-add_executable(httpserver_test httpserver_test.cc)
-target_link_libraries(httpserver_test lightmd_http)
